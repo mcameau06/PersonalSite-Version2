@@ -1,0 +1,63 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-image: radial-gradient( circle farthest-corner at 50% 52.5%,  rgba(14,53,92,1) 0%, rgba(16,14,72,1) 90% );
+    color: white;
+}
+.background{
+   
+    position:absolute;
+    display: block;
+    top:0;
+    left:0;
+    z-index: 0;
+}
+/*
+navbar
+*/
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding: 1.5rem;
+    z-index: 1000;
+    
+}
+
+.nav-links{
+   display: flex;
+   gap: 2rem;   
+  padding:.5rem;
+}
+li{
+    list-style: none;   
+}
+a{
+    text-decoration: none;
+    font-size: 1.5rem;
+    color:white;
+}
+
+/*
+home
+*/
+
+.home-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    
+}
+.home-container h1{
+  font-size: 75px;  
+}
+
+
+
+
+
+
+
+
