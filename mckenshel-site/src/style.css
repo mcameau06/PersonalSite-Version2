@@ -104,10 +104,10 @@ home
 section{
   display: none;
 }
-section#home{
+
+section.active{
   display: block;
 }
-
 
 
 

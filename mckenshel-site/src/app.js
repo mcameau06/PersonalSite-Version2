@@ -1,6 +1,6 @@
 import Particles from 'particlesjs';
 
-    window.onload = function(){
+    
     Particles.init({
         selector:'.background',
         sizeVariations:'5',
@@ -22,16 +22,15 @@ navLinks.forEach(link =>{
         
         const targetId = link.getAttribute('href').substring(1);
 
-        sections.forEach(section => section.style.display='none');
+        sections.forEach(section => section.classList.remove('active'));
 
         
        
 
         const sectionToShow = document.getElementById(targetId);
            if (sectionToShow) {
-            sectionToShow.style.display='block';
+           sectionToShow.classList.add('active');
         }
     })
 })
 
-}
