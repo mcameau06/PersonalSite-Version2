@@ -1,8 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap');
+
 body{
-    margin: 0;
-    padding: 0;
     background-image: radial-gradient( circle farthest-corner at 50% 52.5%,  rgba(14,53,92,1) 0%, rgba(16,14,72,1) 90% );
     color: white;
+    overflow: hidden;
+    font-family: "Zen Dots",sans-serif;
+    /*overflow-y: auto; */
 }
 .background{
    
@@ -12,9 +15,37 @@ body{
     left:0;
     z-index: 0;
 }
+.main {
+  margin-right: 160px; /* Same as the width of the sidebar */
+  padding: 0px 10px;
+}
 /*
 navbar
 */
+.links-container {
+  height: 100%; /* Full-height: remove this if you want "auto" height */
+  width: 8%; /* Set the width of the sidebar */
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  right: 0;
+  background-image:radial-gradient( circle farthest-corner at 50% 52.5%,  rgba(14,53,92,1) 0%, rgba(16,14,72,.05) 90% ); /* Black */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  backdrop-filter: blur(15px);
+}
+.links-container a {
+  padding: 0;
+  text-decoration: none;
+  font-size: 25px;
+  
+  display: block;
+}
+
 .navbar{
     display: flex;
     justify-content: center;
@@ -28,6 +59,9 @@ navbar
    display: flex;
    gap: 2rem;   
   padding:.5rem;
+  flex-direction: column;
+  justify-content: center;
+
 }
 li{
     list-style: none;   
@@ -36,6 +70,19 @@ a{
     text-decoration: none;
     font-size: 1.5rem;
     color:white;
+}
+.nav-items a{
+    color:white;  
+    
+}
+
+.nav-items{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    font-size: 1rem;
 }
 
 /*
@@ -53,6 +100,14 @@ home
 .home-container h1{
   font-size: 75px;  
 }
+
+section{
+  display: none;
+}
+section#home{
+  display: block;
+}
+
 
 
 

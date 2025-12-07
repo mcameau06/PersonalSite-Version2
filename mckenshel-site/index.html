@@ -11,67 +11,88 @@
 </head>
 <body>
     <header>
+        
         <nav class="navbar">
             <div class="links-container">
                 <ul class="nav-links">
                     <li class="nav-items">
-                        <a class="link-content" href="#home">Home</a>
+                        <a class="link-content" href="#home">
+                            <i class="fa-regular fa-house"></i>
+                        </a>
+                        <h3>Home</h3>
                     </li>
-                    <li class="nav-items"><a href="#about">About</a></li>
-                    <li class="nav-items"><a href="#work">Work</a></li>
-                    <li class="nav-items"><a href="#contact">Contact</a></li>
+                    <li class="nav-items">
+                        <a href="#about" class="nav-link">
+                            <i class="fa-regular fa-user"></i>
+                        </a>
+                        <h3>About</h3>
+                    </li>
+                    <li class="nav-items">
+                        <a href="#work" class="nav-link"><i class="fa-solid fa-briefcase"></i></a>
+                        <h3>Work</h3>
+                    </li>
+                    <li class="nav-items">
+                        <a href="#contact" class="nav-link"><i class="fa-solid fa-address-book"></i></a>
+                        <h3>Contact</h3>
+                    </li>
                 </ul>
             </div>
         </nav>
     </header>
-    <section id="home">
 
 
-        <div class="home-container">
-
-            <h1>Hi, I'm Mckenshel Cameau</h1>
-            <div class="icons">
-              <a href="https://github.com/mcameau06" target="_blank"> <i class="fa-brands fa-github"></i> </a>
+    <div class="main">
+        <section id="home">
+            <div class="home-container">
+                <h1>Hi, I'm Mckenshel Cameau</h1>
+                <div class="icons">
+                <a href="https://github.com/mcameau06" target="_blank"> <i class="fa-brands fa-github"></i> </a>
+                </div>        
             </div>
-            
-        </div>
-        <h2>I'm a Computer Science Student at Umass Boston and an undergraduate researcher</h2>
-       
+            <h2>I'm a Computer Science Student at Umass Boston and an undergraduate researcher</h2>
+        </section>
 
 
 
-        <a href="#work">Work Experience</a>
-    </section>
-    <section id="about">
-        <h2>About Me</h2>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-                Vero, labore dolorum consectetur, quaerat itaque, repellendus 
-                beatae sequi aut quisquam odio tempora! Ullam nulla sequi sed
-                vero harum aspernatur necessitatibus asperiores.
-            </p>
-            <h3> Tech Stack </h3>
-            <ul class="skills">
-                <li class="skill">Python</li>
-                <li class="skill">Javascript</li>
-                <li class="skill">Java</li>
-                <li class="skill">React</li>
-                <li class="skill">Numpy</li>
-            </ul>      
-    </section>
-    <section id="projects">
-        
+        <section id="about">
+                  <h2>About Me</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                    Vero, labore dolorum consectetur, quaerat itaque, repellendus 
+                    beatae sequi aut quisquam odio tempora! Ullam nulla sequi sed
+                    vero harum aspernatur necessitatibus asperiores.
+                </p>
+                <h3> Tech Stack </h3>
+                <ul class="skills">
+                    <li class="skill">Python</li>
+                    <li class="skill">Javascript</li>
+                    <li class="skill">Java</li>
+                    <li class="skill">React</li>
+                    <li class="skill">Numpy</li>
+        </section>
 
-    </section>
 
-    <section id="contact">
-        <h2>Contact Me!</h2>
-        <div>
-            <a target="_blank">Github</a>
-            <a target="_blank">Linkedin</a>
-            <a target="_blank">Email</a>
-        </div>
 
-    </section>
+
+
+        <section id="work">
+            <h1>Work Experience</h1>
+            <p>Your work content here</p>
+        </section>
+
+        <section id="contact">
+                      <h2>Contact Me!</h2>
+            <div>
+                
+                <a target="_blank">Email</a>
+            </div>
+
+        </section>
+
+    </div>
+
+
+
+    </div>
     <canvas class="background"></canvas>
 
 </body>
